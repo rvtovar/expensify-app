@@ -9,7 +9,9 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
-    "twatch": "jest --config=jest.config.json --watch"
+    "twatch": "jest --config=jest.config.json --watch",
+    "start": "node server/server.js",
+    "heroku-postbuild":"yarn run build:prod"
   },
   "devDependencies": {
     "babel-loader": "^8.0.6",
@@ -31,6 +33,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",
+    "express": "^4.17.1",
     "jest": "^24.9.0",
     "jquery": "^3.4.1",
     "live-server": "^1.2.1",
