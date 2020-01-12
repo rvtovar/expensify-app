@@ -5,11 +5,12 @@ import {editExpense,removeExpense} from '../actions/expenses'
 
 export class EditPage extends React.Component{
     onSubmit = (expense) => {
+        console.log('hello')
         this.props.editExpense(this.props.expense.id, expense)
         this.props.history.push('/')
     }
     onClick = () => {
-        this.props.removeExpense({id:this.props.expense.id})
+        this.props.removeExpense(this.props.expense.id)
         this.props.history.push('/')
     }
     render(){
