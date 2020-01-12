@@ -5,7 +5,6 @@ import {editExpense,removeExpense} from '../actions/expenses'
 
 export class EditPage extends React.Component{
     onSubmit = (expense) => {
-        console.log('hello')
         this.props.editExpense(this.props.expense.id, expense)
         this.props.history.push('/')
     }
