@@ -12,12 +12,6 @@ import './styles/styles.scss'
 
 const store = configureStore()
 
-
-const ex1 = store.dispatch(addExpense({description:'Power Bill', amount:20000,createdAt:9000}))
-const ex2 = store.dispatch(addExpense({description:'Rent', amount:77500, createdAt:4500}))
-const ex3 = store.dispatch(addExpense({description:'Coffee', amount:400, createdAt:1000}))
-
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />
